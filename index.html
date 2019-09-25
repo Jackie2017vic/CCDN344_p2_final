@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flow</title>
+    <script src="http://d3js.org/d3.v4.min.js"></script>
+
+    <link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
+    <link rel="stylesheet" type="text/css" href="sequences.css"/>
+  </head>
+
+    <p style="font-size: 30px"> Twitter active index analysis</p>
+
+  <body>
+    <div id="main">
+      <div id="sequence"></div>
+      <div id="chart">
+
+      </div>
+    </div>
+    <div id="sidebar">
+      <input type="checkbox" id="toggleindex"> Index<br/>
+      <div id="index" style="visibility: hidden;"></div>
+    </div>
+    <script type="text/javascript" src="sequences.js"></script>
+    <script type="text/javascript">
+      
+
+      // Auto display this figure on canvas
+      d3.select(self.frameElement).style("height", "800px");
+  </script> 
+          <div id="explanation" style="visibility: hidden;">
+          <span id="percentage"></span><br/>
+          Twitter active index analysis
+        </div>
+
+  </body>
+</html>
